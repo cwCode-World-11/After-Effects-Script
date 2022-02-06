@@ -1,0 +1,8 @@
+shape layer=Target layer
+
+target layer la irukura trim path la end property la intha expression ah paste pannanum =thisComp.layer("Shape Layer 3").effect("Slider Control")("Slider")
+
+vera layer la position property la intha expression ah paste pannanum=
+a=thisComp.layer("Target Layer");
+b=thisComp.layer("Target Layer").content("Shape 1").content("Path 1").path;
+a.toComp(b.pointOnPath(effect("Slider Control")("Slider")/100));

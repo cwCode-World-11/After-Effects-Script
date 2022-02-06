@@ -1,0 +1,18 @@
+		Basically we can't control particle position in 3D space.it start with 0,end with 1.but normal 3d space
+have a 3 demensions and start with 0 end with big number so it hard to control a particle position in 3D space.
+To solve this problem apply some expresssion.
+
+Effect=CC Particle World.
+Property=Position.
+
+Position X:
+	x=thisComp.layer("Position Of Particles").transform.position[0]-thisComp.width/2;
+	x/thisComp.width;
+
+Position Y:
+	y=thisComp.layer("Position Of Particles").transform.position[1]-thisComp.height/2;
+	y/thisComp.width;
+
+Position Z:
+	z=thisComp.layer("Position Of Particles").transform.position[2];
+	z/thisComp.width;

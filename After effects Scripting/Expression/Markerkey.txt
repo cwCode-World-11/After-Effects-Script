@@ -1,0 +1,24 @@
+Basic marker key expression
+
+thisLayer.marker.key(1)//marker key selected
+
+marker.nearestKey(time).index;//nearest marker key selected based on time
+
+marker.nearestKey(time).time-time;//how many time to near the key(Coundown)
+
+
+//controling the opacity using marker key(Fade in,Fade out)
+a=thisLayer.marker.key(1).time;
+b=thisLayer.marker.key(2).time;
+c=1	//duration;
+if(marker.nearestKey(time).time-c){
+if(marker.nearestKey(time).comment=="In"){
+linear(time,a-c,a,0,100);
+}
+else if(marker.nearestKey(time).comment=="Out"){
+linear(time,b,b+c,100,0);
+}
+}
+else{
+value;
+}

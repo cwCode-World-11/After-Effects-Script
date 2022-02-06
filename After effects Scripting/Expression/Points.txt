@@ -1,0 +1,6 @@
+shape layer eduthukuta neraiya vertices(points) varum.atha eppadi edukuruthu na intha expression ally pannanum
+path-ah select panni points ah mention pannanum.
+
+a=thisComp.layer("Target Layer");
+b=thisComp.layer("Target Layer").content("Shape 1").content("Path 1").path;
+a.toComp(b.points()[0]);

@@ -1,0 +1,28 @@
+t = Math.floor(place_number_here-time); 
+
+minute = Math.floor(t / 60);
+second = t % 60;
+
+if(minute < 10)
+{
+ if(second < 10)
+ {
+  ['0' + minute + '·' + '0' + second];
+ }
+ else
+ {
+  ['0' + minute + '·' + second];
+ }
+}
+
+else 
+{
+ if(second < 10)
+ {
+  [minute + '·' + '0' + second];
+ }
+ else
+ {
+  [minute + '·' + second];
+ }
+}
